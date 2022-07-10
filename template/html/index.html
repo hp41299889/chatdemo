@@ -3,6 +3,16 @@
 
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+{{ if .success }}
+    <div class="alert alert-success" role="alert">
+        {{ .success }}
+    </div>
+{{ end }}
+{{if .error}}
+    <div class="alert alert-danger" role="alert">
+        {{ .error }}
+    </div>
+{{end}}
 <div class="container register-form">
     <form METHOD="POST" ACTION="/login">
         <div class="form">
