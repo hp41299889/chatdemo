@@ -7,7 +7,7 @@ import (
 )
 
 func DefaultPage(c *gin.Context) {
-	c.Redirect(http.StatusMovedPermanently, "index.html")
+	c.Redirect(http.StatusMovedPermanently, "wtf")
 }
 
 func LoginPage(c *gin.Context) {
